@@ -13,7 +13,7 @@ import java.net.URLClassLoader;
 public class Main {
 
     public static void main(String[] args) {
-        String classPath = "animal.jar";
+        String classPath = "https://github.com/tmars/JavaClassLoader/raw/master/animal.jar";
         String className = "com.talipov.Animal";
 
         CustomClassLoader cl = new CustomClassLoader();
@@ -48,6 +48,6 @@ public class Main {
             e.printStackTrace();
         }
 
-
+        System.out.println("Done.");
     }
 }
